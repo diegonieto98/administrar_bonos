@@ -1,0 +1,22 @@
+{
+  "name": "administrar_bonos",
+  "version": "1.0.0",
+  "description": "Este programa sirve para administrar bonos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegonieto98/administrar_bonos.git"
+  },
+  "author": "Diego Nieto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegonieto98/administrar_bonos/issues"
+  },
+  "homepage": "https://github.com/diegonieto98/administrar_bonos#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
