@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/diegonieto98/administrar_bonos#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "merge-descriptors": "^1.0.1"
   }
 }
