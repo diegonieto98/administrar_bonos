@@ -1,16 +1,20 @@
 const express = require('express');
-const Router = express.Router();
+const router = express.Router();
 
 const indexControles = require('./controles.js');
 
-Router.get('/', indexControles.index);
+router.get('/', indexControles.index);
 
-Router.get('/products', indexControles.getProducts);
+router.get('/products', indexControles.getProducts);
 
-Router.post('/new-product', indexControles.addProduct);
+router.post('/new-product', indexControles.addProduct);
 
-Router.get('/coupons', indexControles.getCoupons);
+router.get('/coupons', indexControles.getCoupons);
 
-Router.post('/new-coupons', indexControles.addcoupons);
+router.post('/new-coupons', indexControles.addCoupon);
+
+router.get('/details-product', indexControles.detailsProducts);
+
+router.get('/details-coupon', indexControles.detailsCoupons);
 
 module.exports = router;

@@ -1,22 +1,11 @@
-<% include partials/head %>
-
-<h1><%= title %></h1>
-
-<h3>Lista de Products</h3>
-<ul>
-	<% for(var i = 0; i < items.length; i++) { %>
-		<li><%= Product[i].name %></li>
-	<% }%>
-</ul>
-
-<h3>Add a New Product</h3>
-
-<form action="/new-product" method="POST">
-	<input id="newItem" type="text" name="newItem">
-	<button>Add a Produt</button>
-</form>
-<h3>Lista de Cupones</h3>
-<script>
-	const txtNewItem = document.getElementById('newItem');
-	txtNewItem.focus();
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lista de productos</title>
+</head>
+<body>
+	<h1>Lista de los productos</h1>
+</body>
+</html>

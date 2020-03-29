@@ -23,22 +23,46 @@ var  coupon =[
 
 ];
 
+var detailsC =[	
+{
+	id: 1, //number
+	name: 'coupon name', // string
+	description: 'coupon description', // string
+	product_id: 1,  // number (product id)
+},
+{
+	id: 2, //number
+	name: 'coupon name 2', // string
+	description: 'coupon description 2', // string
+	product_id: 2,  // number (product id)
+}
+];
+
 const index = (req, res, next) => {
 	res.render('index', {
-		title: 'Aplicacion para administrar bonos'
 	});
 };
 
 const getProducts = (req, res, next) => {
 	res.render('products', {
-		title: 'List of Products',
 		product
+	});
+};
+
+const detailsProducts = (req, res, next) => {
+	res.render('details-products', {
+		product
+	});
+};
+
+const detailsCoupons = (req, res, next) => {
+	res.render('details-coupons', {
+		detailsC
 	});
 };
 
 const getCoupons = (req, res, next) => {
 	res.render('coupons', {
-		title: 'List of Coupons',
 		coupon
 	});
 };
@@ -78,5 +102,7 @@ module.exports = {
   getProducts,
   addProduct,
   getCoupons,
-  addCoupon
+  addCoupon,
+  detailsProducts,
+  detailsCoupons
 };
