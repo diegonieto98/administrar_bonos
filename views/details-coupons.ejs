@@ -6,6 +6,16 @@
     <title>Detalles de los cupones</title>
 </head>
 <body>
-    <h1>Detalle de cupones</h1>
+    <h1 style="text-align: center;">Buscar el bono por medio del product_ID</h1>
+
+    <form style="text-align: center" action="/details-coupons/findcoupon" method="POST">
+        <br><br>Ingrese la ID del product_ID: <input type="text" name="productid" id="productid">
+        <button> Buscar bono </button><br><br><br>
+
+        <h3 style="text-align: center"><a href="http://localhost:3000/" class="nave-link" >Regresar a Inicio</a></h3>
+    </form>
+    <script>
+        var productid = document.getElementById('productid');
+    </script>
 </body>
 </html>

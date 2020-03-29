@@ -7,15 +7,17 @@
 </head>
 <body>
     <h1>EL bono fue creado y esta lleno de la siguiente forma </h1>
-    <ul>
-        <li> 
-            id = <%= coupon.length %><br>
-            name = <%= coupon[coupon.length].name %><br>
-            description = <%= coupon[coupon.length].description %><br>
-            product_id = <%= coupon[coupon.length].product_id %><br>
-            validsince = <%= coupon[coupon.length].validsince %><br>
-            validuntil = <%= coupon.validuntil %><br>
-        </li>
-    </ul>
+    <form action="./newcuopons/newc" method="GET">
+        <ul>
+            <li> 
+                id = <%= coupon.length %><br>
+                name = <%= coupon[coupon.length].name %><br>
+                description = <%= coupon[coupon.length].description %><br>
+                product_id = <%= coupon[coupon.length].product_id %><br>
+                validsince = <%= coupon[coupon.length].validsince %><br>
+                validuntil = <%= coupon.validuntil %><br>
+            </li>
+        </ul>
+    </form>
 </body>
 </html>

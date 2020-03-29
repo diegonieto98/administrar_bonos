@@ -56,9 +56,10 @@ const getCoupons = (req, res, next) => {
 };
 
 const detailsProducts = (req, res, next) => {
+	
 	res.render('details-products', {
-		product:  product
 	});
+	const productid = req.body.productid;
 };
 
 const detailsCoupons = (req, res, next) => {
@@ -80,7 +81,7 @@ const addProduct = (req, res) => {
 		product : product
 	})
 
-	res.redirect('/');
+	res.redirect('/newp');
 };
 
 const validarCoupon = (req, res) => {
@@ -88,6 +89,10 @@ const validarCoupon = (req, res) => {
 	});
 };
 
+const vcoupon =(req,res) => {
+	res.render('vcoupon',{
+	})
+}
 const addCoupon = (req, res, next) => {
 	var newName = req.body.newName;
 	var newDescription = req.body.newDescription;
@@ -114,13 +119,24 @@ const viewCoupon = (req,res,next) => {
 	});
 }
 
-const findproduct = (req,res,next) => {
-	const productid = req.body.productid;
-
-	res.render('findproduct'),{
-		product : product
-	}
+const viewProuduct = (req,res,next) => {
+	res.render('newp', {
+		product
+	});
 }
+
+const findproduct = (req,res,next) => {
+	const indices = req.body.indeces;
+	res.render('findproduct'),{
+		indices,
+		product
+	}
+};
+
+const findcoupon = (req,res) => {
+	res.render('findcoupon',{
+	})
+};
 
 module.exports = {
   index,
@@ -132,5 +148,8 @@ module.exports = {
   detailsCoupons,
   validarCoupon,
   viewCoupon,
-  findproduct
+  findproduct,
+  findcoupon,
+  viewProuduct,
+  vcoupon
 };

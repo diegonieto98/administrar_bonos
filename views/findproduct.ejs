@@ -9,6 +9,14 @@
     <h1>
         Aqui tiene el producto que estaba buscando
     </h1>
-    <h3><a href="http://localhost:3000/" class="nave-link" >Regresar a Inicio</a></h3>
+    <ul>
+		<% for (var i = 0 ; i <product.length; i++) {%>
+			<li> 
+				id = <%= product[i].id %><br>
+				name = <%= product[i].name %><br><br>
+			</li>
+		<% } %>
+	</ul>
+    <h3><a href="http://localhost:3000/" class="nave-link" id="regresar" >Regresar a Inicio</a></h3>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <h1>
         Agregar nuevo producto
     </h1>
-    <form action="/newproduct" method="POST">
+    <form action="/newproduct/newp" method="POST">
         Ingresar el nombre del nuevo producto = <input type="text" name="newnmane" id="newname"><br>
         <button> Agregar producto </button>
     </form>
@@ -17,14 +17,5 @@
         const newname = document.getElementById('newname')
         txt.newproduct.id.focus();
     </script>
-    <h1>
-        Los datos de su nuevo producto
-    </h1>
-    <ul>
-            <li> 
-                id = <%= product.length + 1 %><br>
-                name = <%= newname %><br>
-            </li>
-    </ul>
 </body>
 </html>
