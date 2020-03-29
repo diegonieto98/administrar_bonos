@@ -4,8 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lista de productos</title>
+</script>
 </head>
 <body>
-	<h1>Lista de los productos</h1>
+	<h1>Lista de los todos los productos</h1>
+	<ul>
+		<% for (var i = 0 ; i <product.length; i++) {%>
+			<li> 
+				id = <%= product[i].id %><br>
+				name = <%= product[i].name %><br><br>
+			</li>
+		<% } %>
+	</ul>
+	<h3><a href="http://localhost:3000/" class="nave-link" >Regresar a Inicio</a></h3>
 </body>
 </html>

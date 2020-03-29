@@ -7,14 +7,20 @@ router.get('/', indexControles.index);
 
 router.get('/products', indexControles.getProducts);
 
-router.post('/new-product', indexControles.addProduct);
+router.get('/newcoupons', indexControles.addCoupon);
+
+router.post('/newcoupons/newc', indexControles.viewCoupon);
+
+router.post('/newproduct', indexControles.addProduct);
 
 router.get('/coupons', indexControles.getCoupons);
 
-router.post('/new-coupons', indexControles.addCoupon);
-
 router.get('/details-product', indexControles.detailsProducts);
 
+router.get('details-product/findproduct', indexControles.findproduct);
+
 router.get('/details-coupon', indexControles.detailsCoupons);
+
+router.get('/validarCoupon', indexControles.validarCoupon);
 
 module.exports = router;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar nuevo producto</title>
+</head>
+<body>
+    <h1>
+        Agregar nuevo producto
+    </h1>
+    <form action="/newproduct" method="POST">
+        Ingresar el nombre del nuevo producto = <input type="text" name="newnmane" id="newname"><br>
+        <button> Agregar producto </button>
+    </form>
+    <script>
+        const newname = document.getElementById('newname')
+        txt.newproduct.id.focus();
+    </script>
+    <h1>
+        Los datos de su nuevo producto
+    </h1>
+    <ul>
+            <li> 
+                id = <%= product.length + 1 %><br>
+                name = <%= newname %><br>
+            </li>
+    </ul>
+</body>
+</html>

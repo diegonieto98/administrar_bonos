@@ -3,7 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const routes = require ('./routes.js');
+const routes = require ('./routes');
+
 // settings
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(routes);
 
 // satic files
-app.use(express.static(path.join(__dirname, '/public/')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // bootstraping the app
 app.listen(3000, () => console.log('server on port 3000'));
