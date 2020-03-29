@@ -2,10 +2,10 @@
 
 <h1><%= title %></h1>
 
-<h3>List of Products</h3>
+<h3>Lista de Products</h3>
 <ul>
 	<% for(var i = 0; i < items.length; i++) { %>
-		<li><%= items[i].name %></li>
+		<li><%= Product[i].name %></li>
 	<% }%>
 </ul>
 
@@ -15,7 +15,7 @@
 	<input id="newItem" type="text" name="newItem">
 	<button>Add a Produt</button>
 </form>
-
+<h3>Lista de Cupones</h3>
 <script>
 	const txtNewItem = document.getElementById('newItem');
 	txtNewItem.focus();

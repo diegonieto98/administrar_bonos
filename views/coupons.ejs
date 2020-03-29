@@ -5,7 +5,7 @@
 <h3>List of Products</h3>
 <ul>
 	<% for(var i = 0; i < items.length; i++) { %>
-		<li><%= items[i].name %></li>
+		<li><%= Coupon[i].name %></li>
 	<% }%>
 </ul>
 
@@ -13,7 +13,7 @@
 
 <form action="/new-coupon" method="POST">
 	<input id="newItem" type="text" name="newItem">
-	<button>Add a Produt</button>
+	<button>Add a Coupon</button>
 </form>
 
 <script>
