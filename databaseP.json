@@ -1,0 +1,53 @@
+[
+    {	
+		"id" : 1,
+		"name": "Comidas"
+    },
+    {	
+        "id" : 2,
+		"name": "Viajes"
+    },
+        
+    {	
+		"id" : 3,
+		"name": "Hoteles"
+        
+    },
+    {	
+            "id" : 4,
+            "name": "Pasajes"
+        
+    },
+        {	
+            "id" : 5,
+            "name": "Tours"
+        },
+        {	
+            "id" : 6,
+            "name": "videojuegos"
+        },
+        {	
+            "id" : 7,
+            "name": "sitiosweb"
+        },
+        {	
+            "id" : 8,
+            "name": "Netflix"
+        },
+        {	
+            "id" : 9,
+            "name": "Compras_virtuales"
+        },
+        {	
+            "id" : 10,
+            "name": "Parking"
+        },
+        {	
+            "id" : 11,
+            "name": "Computadoras"
+        },
+        {	
+            "id" : 12,
+            "name": "Celulares"
+        }
+]

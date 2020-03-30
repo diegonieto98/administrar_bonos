@@ -1,33 +1,8 @@
-var product = [
-	{	
-		id: 1, 
-		name: 'prod name 1'
-	},
-	{	
-		id: 2, 
-		name: 'prod name 2'
-	},
-];
+const databaseP = require ('./databaseP');
+const databaseC = require ('./databaseC');
 
-var  coupon =[
-	{
-		id: 1, //number
-		name: 'coupon name', // string
-		description: 'coupon description', // string
-		product_id: 1,  // number (product id)
-		valid_since: '2020-02-25T00:00:00.000', // string datetime ISO8601 format
-		valid_until: '2020-02-25T23:59:00.999', // string datetime ISO8601 format
-	},
-	{
-		id: 2, //number
-		name: 'coupon name 2', // string
-		description: 'coupon description 2', // string
-		product_id: 2,  // number (product id)
-		valid_since: '2020-02-25 T00:00:00.000', // string datetime ISO8601 format
-		valid_until: '2020-02-25 T23:59:00.999', // string datetime ISO8601 format
-	}
-
-];
+var product = databaseP;
+var coupon = databaseC;
 
 const index = (req,res,next) => {
 	res.render('index',{
@@ -54,7 +29,6 @@ const detailsProducts = (req, res, next) => {
 
 const detailsCoupons = (req, res, next) => {
 	res.render('details-coupons', {
-		detailsC
 	});
 };
 

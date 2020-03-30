@@ -9,14 +9,15 @@
 <body>
     <h1 style="text-align: center;">Buscar el producto por medio del ID</h1>
 
-    <form style="text-align: center;" action="/details-products/findproduct" method="POST">
-        <br><br>Ingrese la ID del producto: <input type="text" name="productid" id="productid">
+    <form style="text-align: center;" action="./details-products/findproduct" method="POST">
+        <br><br>Ingrese la ID del producto: <input type="text" name="productid1" id="productid1">
         <button> Buscar producto </button><br><br><br>
 
         <h3><a href="http://localhost:3000/" class="nave-link" >Regresar a Inicio</a></h3>
     </form>
     <script>
-        var productid = document.getElementById('productid');
+        const productid1 = document.getElementById('productid1');
+        productid1.focus();
     </script>
 </body>
 </html>

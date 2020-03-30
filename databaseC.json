@@ -1,0 +1,100 @@
+[
+
+    {
+		"id" : 1,
+		"name" : "Lenovo",
+		"description" : "Tiene 10% de descuento en todo",
+		"product_id": "102940",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 2,
+		"name" : "Lenovo",
+		"description" : "Tiene 20% de descuento en todo",
+		"product_id": "102940",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 3,
+		"name" : "Lenovo",
+		"description" : "Tiene 50% de descuento en todo",
+		"product_id": "102940",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 4,
+		"name" : "KFC",
+		"description" : "Tiene 20% de descuento en todo",
+		"product_id": "102905",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 5,
+		"name" : "KFC",
+		"description" : "Tiene 30% de descuento en todo",
+		"product_id": "102905",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 6,
+		"name" : "KFC",
+		"description" : "Tiene 50% de descuento en todo",
+		"product_id": "102905",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 7,
+		"name" : "Apple",
+		"description" : "Tiene 20% de descuento en todo",
+		"product_id": "102880",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 8,
+		"name" : "Apple",
+		"description" : "Tiene 30% de descuento en todo",
+		"product_id": "102880",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 9,
+		"name" : "Apple",
+		"description" : "Tiene 50% de descuento en todo",
+		"product_id": "102905",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 10,
+		"name" : "Books",
+		"description" : "Tiene 20% de descuento en todo",
+		"product_id": "102944",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 11,
+		"name" : "Books",
+		"description" : "Tiene 20% de descuento en todo",
+		"product_id": "102944",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    },      	    
+    {
+		"id" : 12,
+		"name" : "Books",
+		"description" : "Tiene 20% de descuento en todo",
+		"product_id": "102944",
+		"valid_since" : "2020-02-25T00:00:00.000",
+		"valid_until" : "2020-02-25T23:59:00.999" 
+    }
+    
+]
