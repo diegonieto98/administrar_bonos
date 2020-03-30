@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuevo cupon</title>
+    <link rel="Stylesheet" href="css/main.css" type="text/css">
 </head>
-<body>
+<body style="text-align: center">
     <h1>Agregar nuevo cupon</h1>
     <form action ="/newcoupons/newc" method="POST">
         Ingrese el nombre del cupon: <input type="text" name="newName" id="newName"><br><br>
@@ -17,8 +18,9 @@
             const newName = document.getElementById('newName');
             const newDescription = document.getElementById('newDescription');
             const newId = document.getElementById('newId')
-            txt.newproduct.id.focus();
+            newName.id.focus();
         </script>
+        <h3><a href="http://localhost:3000/" class="nave-link" >Regresar a Inicio</a></h3>
     </form>
 </body>
 </html>
