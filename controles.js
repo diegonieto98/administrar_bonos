@@ -3,10 +3,15 @@ const databaseC = require ('./database/databaseC');
 
 var product = databaseP;
 var coupon = databaseC;
-var indicesP =[0];
+var indicesP=0;
+var indicesC=0;
 
 const index = (req,res,next) => {
+	indicesP=0;
+	indicesC=0;
 	res.render('index',{
+		indicesP : indicesP,
+		indicesC : indicesC
 	});
 };
 
@@ -23,18 +28,20 @@ const getCoupons = (req, res, next) => {
 };
 
 const detailsProducts = (req, res, next) => {
-	
 	res.render('details-products', {
 		product : product,
 		indicesP : indicesP
-		
 	});
 	
 };
 
 const detailsCoupons = (req, res) => {
+	var coupond = coupon[4,{}];
+	console.log(coupond);
 	res.render('details-coupons', {
-		coupon : coupon
+		coupond : coupond,
+		coupon : coupon,
+		indicesC : indicesC
 	});
 };
 
@@ -99,25 +106,25 @@ const viewProduct = (req,res) => {
 
 const findproduct = (req,res) => {
 
+	const productid2 = req.body.productid2;
+	console.log(productid2);
+	indicesP = productid2;
+	console.log(indicesP);
+
 	res.redirect('/details-products');
 
-	if(productid2 != null)
-	{
-		const productid2 = req.body.productid2;
-		var idx = product.indexOf(productid2);
-		console.log(productid2);
-		indicesP.push(idx)
-	}
-	else
-	{
-		productid2 = ["0"];
-		var idx = product.indexOf(productid2);
-		indicesP.push(idx);
-		console.log(productid2);
-	};
 };
 
 const findcoupon = (req,res) => {
+	const productid1 = String(req.body.productid1);
+	var coupond = req.coupond;
+	var idx = coupond.indexOf(productid1);
+	console.log(idx);
+	while (idx != -1){
+		indicesC.push(idx);
+		idx = coupond.indexOf(productid1, idex + 1)
+	}
+	console.log(indicesC);
 	res.redirect('/details-coupons');
 };
 
