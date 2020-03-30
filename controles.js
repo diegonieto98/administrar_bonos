@@ -1,8 +1,9 @@
-const databaseP = require ('./databaseP');
-const databaseC = require ('./databaseC');
+const databaseP = require ('./database/databaseP');
+const databaseC = require ('./database/databaseC');
 
 var product = databaseP;
 var coupon = databaseC;
+var indicesP =[0];
 
 const index = (req,res,next) => {
 	res.render('index',{
@@ -22,13 +23,18 @@ const getCoupons = (req, res, next) => {
 };
 
 const detailsProducts = (req, res, next) => {
+	
 	res.render('details-products', {
+		product : product,
+		indicesP : indicesP
+		
 	});
 	
 };
 
-const detailsCoupons = (req, res, next) => {
+const detailsCoupons = (req, res) => {
 	res.render('details-coupons', {
+		coupon : coupon
 	});
 };
 
@@ -92,8 +98,23 @@ const viewProduct = (req,res) => {
 };
 
 const findproduct = (req,res) => {
-	const productid = req.body.productid;
+
 	res.redirect('/details-products');
+
+	if(productid2 != null)
+	{
+		const productid2 = req.body.productid2;
+		var idx = product.indexOf(productid2);
+		console.log(productid2);
+		indicesP.push(idx)
+	}
+	else
+	{
+		productid2 = ["0"];
+		var idx = product.indexOf(productid2);
+		indicesP.push(idx);
+		console.log(productid2);
+	};
 };
 
 const findcoupon = (req,res) => {

@@ -14,6 +14,11 @@
         <button> Validar Cupon </button><br><br><br>
         <h3 style="text-align: center"><a href="http://localhost:3000/" class="nave-link" >Regresar a Inicio</a></h3>
     </form>
+    <p>
+        Aqui abajo aparecera las horas en las que fueron creadas:
+        valid_since = <%= coupon[i].valid_since %><br>
+		valid_until = <%= coupon[i].valid_until %><br><br>
+    </p>
     <script>
         const productid = document.getElementById('productid');
         productid.focus();
